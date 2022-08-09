@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter() {
+            url 'https://jcenter.bintray.com/'
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() {
+            url 'https://jcenter.bintray.com/'
+        }
+    }
+}
+rootProject.name = "AOPDemo"
+includeBuild("./plugins")
+include ':app'
+include ':proxy'
+include ':base'
+include ':cglib'
+include ':aspect'
